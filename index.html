@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Web Playground</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>Interactive Web Playground 🎮</h1>
+
+    <!-- Button to change text or color -->
+    <button id="changeTextBtn">Click me to change text!</button>
+
+    <!-- Button for hover effect -->
+    <button id="hoverBtn">Hover over me!</button>
+
+    <!-- Image gallery (interactive element) -->
+    <div id="imageGallery">
+        <img src="image_1.jpg" alt="Image 1" class="gallery-image">
+        <img src="image_2.png" alt="Image 2" class="gallery-image">
+        <img src="image_3.png" alt="Image 3" class="gallery-image">
+        <img src="image_4.png" alt="Image 4" class="gallery-image">
+    </div>
+
+    <!-- Tabs for accordion-style content -->
+    <div id="tabs">
+        <button class="tabBtn" data-tab="1">Tab 1</button>
+        <button class="tabBtn" data-tab="2">Tab 2</button>
+        <button class="tabBtn" data-tab="3">Tab 3</button>
+
+        <div class="tabContent" id="tab1">
+            <h2>Image 1: A Cosmic Journey</h2>
+            <p>This image captures a stunning cosmic scene with swirling reds and dark space tones, evoking a sense of mystery and awe. The swirling clouds and distant stars give the feeling of infinite space, inviting the viewer to explore the unknown.</p>
+            <img src="image_1.jpg" alt="Cosmic Image 1" style="width:100%; max-width:800px;">
+        </div>
+
+        <div class="tabContent" id="tab2">
+            <h2>Image 2: Galactic Wonders</h2>
+            <p>In this vibrant and dynamic space image, a planet is caught in the act of glowing radiantly while planets circle around it. The colors convey an otherworldly beauty, with the cosmic rays and distant galaxies creating a mesmerizing effect.</p>
+            <img src="image_2.png" alt="Galactic Wonders Image" style="width:100%; max-width:800px;">
+        </div>
+
+        <div class="tabContent" id="tab3">
+            <h2>Image 3: Deep Blue Nebula</h2>
+            <p>This serene image shows the vastness of space with blues and purples blending into the background. The peaceful, flowing lines create an elegant depiction of nebulae, a natural cosmic beauty.</p>
+            <img src="image_3.png" alt="Deep Blue Nebula" style="width:100%; max-width:800px;">
+        </div>
+    </div>
+
+    <!-- Form Validation -->
+    <form id="signupForm">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        <br><br>
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required minlength="8">
+        <br><br>
+        <input type="submit" value="Submit">
+    </form>
+
+    <script src="script.js"></script>
+</body>
+</html>
